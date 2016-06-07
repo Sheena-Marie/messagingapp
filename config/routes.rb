@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :messages
+  resources :profiles
   get 'admin', to: 'pages#admin'
   get 'contact', to: 'pages#contact'
   root 'pages#home'
